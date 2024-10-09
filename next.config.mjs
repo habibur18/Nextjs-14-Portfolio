@@ -12,11 +12,11 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "i.postimg.cc",
+        hostname: "s1.gifyu.com",
       },
       {
         protocol: "https",
-        hostname: "i.ibb.co",
+        hostname: "i.postimg.cc",
       },
     ],
   },

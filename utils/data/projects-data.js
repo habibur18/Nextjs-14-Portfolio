@@ -65,4 +65,25 @@ export const projectsData = [
       ],
     },
   },
+  {
+    domestika: {
+      info: {
+        title: "Domestika.org Clone",
+        desc: "I was looking for new opportunities while learning React.js. I approached a local IT company (Youth Instructory) that had built their e-learning platform using WordPress, but it was quite slow. They asked me to build a clone of the Domestika website, as they wanted a similar site for themselves. That's why I completed this project in 3-4 days, using React.js and Tailwind CSS to create the Domestika clone. However, they eventually decided to stop the project.",
+        live: "https://youth-instructory.vercel.app/",
+        code: "https://github.com/habibur18/Youth-Instructory",
+        gif: "https://s1.gifyu.com/images/SBlAH.gif",
+      },
+      tech: [
+        {
+          name: "React",
+          src: "https://i.postimg.cc/MvC199Zb/react.png",
+        },
+        {
+          name: "Tailwind",
+          src: "https://i.postimg.cc/v1z9HMr3/Tailwindcss.png",
+        },
+      ],
+    },
+  },
 ];

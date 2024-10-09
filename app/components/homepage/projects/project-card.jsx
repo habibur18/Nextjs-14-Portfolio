@@ -40,6 +40,7 @@ function ProjectCard({ project }) {
                 height={300}
                 src={info.gif}
                 alt=""
+                priority
               />
             </div>
             <div className="w-full pr-3 mt-5 px-4">
