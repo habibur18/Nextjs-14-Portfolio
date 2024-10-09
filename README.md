@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Developer Portfolio built with next.js(14)
 
-## Getting Started
+###### previous portfolio [here](https://habiburdev.netlify.app/)
 
-First, run the development server:
+---
+
+# Demo :movie_camera:
+
+![](./public/image/screen.png)
+
+## View live preview [here](https://habibur18.vercel.app/).
+
+---
+
+## Table of Contents :scroll:
+
+- [Sections](#sections-bookmark)
+- [Demo](#demo-movie_camera)
+- [Installation](#installation-arrow_down)
+- [Getting Started](#getting-started-dart)
+- [Usage](#usage-joystick)
+- [Packages Used](#packages-used-package)
+
+---
+
+# Sections :bookmark:
+
+- HERO SECTION
+- ABOUT ME
+- EXPERIENCE
+- SKILLS
+- PROJECTS
+- EDUCATION
+- CONTACTS
+
+---
+
+# Installation :arrow_down:
+
+### You will need to download Git and Node to run this project
+
+- [Git](https://git-scm.com/downloads)
+- [Node](https://nodejs.org/en/download/)
+
+#### Make sure you have the latest version of both Git and Node on your computer.
+
+```
+node --version
+git --version
+```
+
+## <br />
+
+# Getting Started :dart:
+
+### Fork and Clone the repo
+
+To Fork the repo click on the fork button at the top right of the page. Once the repo is forked open your terminal and perform the following commands
+
+```
+git clone https://github.com/<YOUR GITHUB USERNAME>/Nextjs-14-Portfolio.git
+cd developer-portfolio
+```
+
+### Install packages from the root directory
+
+```bash
+npm install
+# or
+yarn install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Usage :joystick:
 
-## Learn More
+Goto [resend.com/](https://resend.com/) and create a new account for the mail sending. In free trial you will get 100 mail per Day. After setup `resend` account, Please create a new `.env` file from `.env.example` file.
 
-To learn more about Next.js, take a look at the following resources:
+Eg:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```env
+RESEND_API_KEY= Your Secret API Key
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+# Packages Used :package:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Used Package List  |
+| :----------------: | --- |
+|        next        |     |
+|    lottie-react    |
+| react-fast-marquee |
+|    react-icons     |
+|   react-toastify   |     |
+|    tailwindcss     |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
