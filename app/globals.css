@@ -3,25 +3,174 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --foreground-rgb: 211, 216, 232;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground-rgb: 255, 255, 255;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background-color: #0d1224;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+#sticky-card-1 {
+  --index: 1;
+}
+
+#sticky-card-2 {
+  --index: 2;
+}
+
+#sticky-card-3 {
+  --index: 3;
+}
+
+#sticky-card-4 {
+  --index: 4;
+}
+
+.sticky-card {
+  /* padding-top: calc(var(--index) * 2.5rem); */
+  top: calc(var(--index) * 4rem);
+}
+
+/* Set smooth scroll behavior and padding top */
+* {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+/* Define the scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Define the track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+}
+
+/* Define the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #65799b, #5e2563);
+  border-radius: 5px;
+}
+
+.glow-container {
+  --spread: 60;
+}
+
+.glow-card {
+  --active: 0.15;
+  --start: 0;
+}
+
+.glow-card:hover,
+.glow-card:focus-visible {
+  z-index: 2;
+}
+
+.glows {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  filter: blur(calc(var(--blur) * 1px));
+}
+
+.glows::before,
+.glows::after {
+  --alpha: 0;
+  content: "";
+  background: conic-gradient(
+    from 180deg at 50% 70%,
+    #f626af 0deg,
+    #8228ec 72deg,
+    #f626af 144deg,
+    #0025ba 216deg,
+    #f626af 288deg,
+    #fafafa 1turn
+  );
+  background-attachment: fixed;
+  position: absolute;
+  inset: -5px;
+  border: 8px solid transparent;
+  border-radius: 12px;
+  mask: linear-gradient(#0000, #0000),
+    conic-gradient(
+      from calc((var(--start) - (var(--spread) * 0.5)) * 1deg),
+      #000 0deg,
+      #fff,
+      #0000 calc(var(--spread) * 1deg)
+    );
+  mask-composite: intersect;
+  mask-clip: padding-box, border-box;
+  opacity: var(--active);
+  transition: opacity 1s;
+}
+
+.glow-card::before {
+  position: absolute;
+  inset: 0;
+  border: 2px solid transparent;
+  content: "";
+  border-radius: 12px;
+  pointer-events: none;
+  background: #84738c;
+  background-attachment: fixed;
+  mask: linear-gradient(#0000, #0000),
+    conic-gradient(
+      from
+        calc(
+          ((var(--start) + (var(--spread) * 0.25)) - (var(--spread) * 1.5)) *
+            1deg
+        ),
+      #ffffff26 0deg,
+      white,
+      #ffffff26 calc(var(--spread) * 2.5deg)
+    );
+  mask-clip: padding-box, border-box;
+  mask-composite: intersect;
+  opacity: var(--active);
+  transition: opacity 1s;
+}
+
+.glow-card::after {
+  --bg-size: 100%;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  background: conic-gradient(
+    from 180deg at 50% 70%,
+    #f626af 0deg,
+    #8228ec 72deg,
+    #f626af 144deg,
+    #0025ba 216deg,
+    #f626af 288deg,
+    #fafafa 1turn
+  );
+  background-attachment: fixed;
+  border-radius: 12px;
+  opacity: var(--active, 0);
+  transition: opacity 1s;
+  --alpha: 0;
+  inset: 0;
+  border: 2px solid transparent;
+  mask: linear-gradient(#0000, #0000),
+    conic-gradient(
+      from
+        calc(
+          ((var(--start) + (var(--spread) * 0.25)) - (var(--spread) * 0.5)) *
+            1deg
+        ),
+      #0000 0deg,
+      #fff,
+      #0000 calc(var(--spread) * 0.5deg)
+    );
+  filter: brightness(1.5);
+  mask-clip: padding-box, border-box;
+  mask-composite: intersect;
 }
