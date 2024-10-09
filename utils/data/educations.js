@@ -8,8 +8,8 @@ export const educations = [
   {
     id: 2,
     title: "High School",
-    duration: "2024 - 2026",
-    institution: "Dhaka City Ideal School And College",
+    duration: "2020 - 2022",
+    institution: "South Banascree Model HIgh School & College",
   },
   {
     id: 3,
