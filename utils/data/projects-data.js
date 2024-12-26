@@ -86,4 +86,54 @@ export const projectsData = [
       ],
     },
   },
+  {
+    studywav: {
+      info: {
+        title: "Studywav Agency",
+        desc: "I was seeking new opportunities while enhancing my skills with Next.js. I created an agency landing page to showcase modern web development techniques using Next.js 15 and Framer Motion for smooth and engaging animations. The landing page features impressive animations that enhance user experience and includes a three-box subscription accordion, providing an interactive and dynamic interface. I aimed to deliver a visually appealing and highly responsive website that effectively captures the essence of a professional agency.",
+        live: "https://dev.studywav.com/",
+        code: "https://github.com/habibur18/studywav-market",
+        gif: "https://s13.gifyu.com/images/SPYel.gif",
+      },
+      tech: [
+        {
+          name: "Next.js",
+          src: "https://i.ibb.co.com/zfFPDHL/nextjs-icon.png",
+        },
+        {
+          name: "Tailwind",
+          src: "https://i.postimg.cc/v1z9HMr3/Tailwindcss.png",
+        },
+        {
+          name: "Framer Motion",
+          src: "https://i.postimg.cc/hjhTdYP2/Framer-Motion.webp",
+        },
+      ],
+    },
+  },
+  {
+    dentalweb: {
+      info: {
+        title: "Dentist Website",
+        desc: "This is a dental website. It is built with Next.js 15, MongoDB as the database, Shadcn UI, and Tailwind CSS.",
+        live: "https://dental.paipixel.com/",
+        code: "https://github.com/habibur18/dental-physio",
+        gif: "https://s13.gifyu.com/images/SPrzp.gif",
+      },
+      tech: [
+        {
+          name: "Next.js",
+          src: "https://i.ibb.co.com/zfFPDHL/nextjs-icon.png",
+        },
+        {
+          name: "Tailwind",
+          src: "https://i.postimg.cc/v1z9HMr3/Tailwindcss.png",
+        },
+        {
+          name: "MongoDB",
+          src: "https://i.postimg.cc/JDzXsgKm/mongodb.png",
+        },
+      ],
+    },
+  },
 ];
